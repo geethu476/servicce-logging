@@ -33,7 +33,7 @@ class BranchController extends Controller
     public function index()
     {
 
-        return view('pages.settings.branch.index',['branches' => Branch::all()]);
+        return view('pages.employee.branch.index',['branches' => Branch::all()]);
     }
 
     /**
@@ -44,7 +44,7 @@ class BranchController extends Controller
     public function create()
     {
 
-        return view('pages.settings.branch.create', [
+        return view('pages.employee.branch.create', [
             'countries' => $this->countryState->getCountries(),
         ]);
     }
@@ -55,7 +55,7 @@ class BranchController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(CreateBranchRequest $request)
+    public function store(Request $request)
     {
 
 
@@ -97,7 +97,7 @@ class BranchController extends Controller
     {
         $branch = Branch::findOrFail($id);
 
-        return view('pages.settings.branch.show', [
+        return view('pages.employee.branch.show', [
             'countries' => $this->countryState->getCountries(),
             'branch' => $branch
         ]);

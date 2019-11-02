@@ -45,7 +45,7 @@
                                                             <th class="no-sort">@lang('form.action')</th>
                                                         </thead>
                                                         <tbody>
-                                                           {{--  @foreach($branches as $key => $branch)
+                                                            @foreach($branches as $key => $branch)
                                                                 <tr>
                                                                     <td>{{++$key}}</td>
                                                                     <td>{{$branch->name}}</td>
@@ -71,7 +71,7 @@
                                                                         @endif
                                                                     </td>
                                                                 </tr>
-                                                            @endforeach --}}
+                                                            @endforeach
                                                         </tbody>
                                                     </table>
                                                 </div>

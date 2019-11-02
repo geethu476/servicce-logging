@@ -330,9 +330,9 @@
                 </a>
                 <ul id="supl_dr" class="collapse collapse-level-1">
                     <li>
-                        <a href="{{url('/department')}}"
+                        <a href="{{url('/branch')}}"
                             class="spa-nav-link">
-                            Department
+                            Branch
                         </a>
                     </li>
                     <li>

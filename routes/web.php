@@ -15,15 +15,21 @@
 //     return view('welcome');
 // });
 
+Route::prefix('country')->group(function () {
+    Route::get('/{country}/states/json', 'CountryController@stateJson');
+});
+
 Auth::routes();
 
 Route::middleware('auth')->group(function () {
     Route::get('/', 'DashboardController@index');
     Route::get('/home', 'DashboardController@home');
 
-    Route::prefix('department')->group(function () {
-        Route::get('/', 'DepartmentController@index');
-        Route::post('/', 'DepartmentController@store');
+    Route::prefix('branch')->group(function () {
+        Route::get('/', 'BranchController@index');
+        Route::get('/create', 'BranchController@create');
+        Route::post('/', 'BranchController@store');
+        Route::get('/{branch}', 'BranchController@show');
         // Route::get('/{job}/destroy', 'JobTitleController@destroy');
         // Route::put('/{job}', 'JobTitleController@update');
     });
