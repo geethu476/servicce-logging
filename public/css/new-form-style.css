@@ -1,0 +1,119 @@
+/*index*/
+.dataTable thead tr th {
+    font-size: 10px;
+}
+.dataTable tbody tr td {
+    font-size: 12px;
+}
+/*create*/
+.form-wrap input.form-control, select.form-control {
+    height: 30px;
+    font-size: 12px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #aaa;
+}
+.form-wrap textarea.form-control {
+    font-size: 12px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #aaa;
+}
+.form-wrap .control-label {
+    font-size: 10px;
+    font-weight: bold;
+}
+.form-wrap .chosen-container {
+    font-size: 12px;
+}
+.form-wrap .chosen-container-single .chosen-single {
+    height: 30px;
+}
+.form-wrap .chosen-container-single .chosen-single span {
+    padding: 2px 12px;
+}
+.form-wrap .fileinput .form-control {
+    height: 30px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #aaa;
+    border-right: 0px; 
+}
+.form-wrap .fileinput .input-group-addon {
+    padding: 7px;
+    box-shadow: 0 0 3px #fff inset, 0 1px 1px rgba(0,0,0,.1);
+    border: 1px solid #aaa;
+    background: #fff;
+    color: #9e9797;
+    border-left: 0px;
+    font-size: 12px;
+}
+.form-wrap .fileinput .input-group-addon .error {
+    color: #ffffff;
+}
+/*show*/
+@media (min-width: 768px) {
+    #myModal .modal-dialog {
+        width: 75%;
+        margin: 30px auto;
+    }
+}
+#myModal input.form-control, select.form-control {
+    height: 30px;
+    font-size: 12px;
+}
+#myModal textarea.form-control {
+    font-size: 12px;
+}
+#myModal .control-label {
+    font-size: 10px;
+    font-weight: bold;
+}
+#myModal .chosen-container {
+    font-size: 12px;
+}
+#myModal .chosen-container-single .chosen-single {
+    height: 30px;
+}
+#myModal .chosen-container-single .chosen-single span {
+    padding: 2px 12px;
+}
+#myModal .fileinput .form-control {
+    height: 30px;
+}
+#myModal .fileinput .form-control {
+    height: 30px;
+}
+#myModal .fileinput .input-group-addon {
+    padding: 7px;
+}
+#myModal .fileinput .input-group-addon .error {
+    color: #ffffff;
+}
+.user-others-details table {
+    border: 1px solid;
+}
+.user-others-details table tbody tr td {
+    font-size: 12px;
+}
+.user-others-details i {
+    font-size: 12px;
+}
+.user-others-details span {
+    font-size: 12px;
+}
+/*type index*/
+.card-block input.form-control, select.form-control {
+    height: 30px;
+    font-size: 12px;
+}
+.card-block textarea.form-control {
+    font-size: 12px;
+}
+.card-block .control-label {
+    font-size: 10px;
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .type-modal {
+        max-width: 75% !important;
+        margin: 30px auto;
+    }
+}
