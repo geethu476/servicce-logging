@@ -15,6 +15,8 @@ return [
 
     'add' =>'Add',
     'list' => 'List',
+    'serial_no' => 'Serial No',
+    'item' => 'Item',
     'supplier_type' => 'Supplier Type',
     'change'=> 'Change',
     'update'=> 'Update',

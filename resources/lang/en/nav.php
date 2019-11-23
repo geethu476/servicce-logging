@@ -20,6 +20,7 @@ return [
     'supplier' => 'Supplier',
     'suppliers_types' => 'Suppliers Types',
     'suppliers' => 'Suppliers',
+    'serial_no' => 'Serial No',
 
     'customer' => 'Customer',
     'customer_types' => 'Customer Types',
@@ -45,7 +46,7 @@ return [
     'raw_materials'=> 'Raw Materials',
     'product_management'=> 'Product Management',
     'categories'=> 'Categories',
-    'products'=> 'Products',
+    'product'=> 'Product',
     'process_managenent'=> 'Process Managenent',
     'process'=> 'Process',
     'process_history'=> 'Process History',

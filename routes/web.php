@@ -38,26 +38,31 @@ Route::middleware('auth')->group(function () {
  // Route::middleware('check_privilege:manage_supplier')->group(function () {
       
 
-        // Route::prefix('supplier')->group(function () {
-        //     Route::get('/', 'SupplierController@index');
-        //     Route::get('/create', 'SupplierController@create');
-        //     Route::post('/', 'SupplierController@store');
-        //     Route::get('/{supplier}', 'SupplierController@show');
-        //     Route::get('/{supplier}/edit', 'SupplierController@edit');
-        //     Route::put('/{supplier}', 'SupplierController@update');
-        //     Route::get('/{supplier}/destroy', 'SupplierController@destroy');
-        // });
+        Route::prefix('employee')->group(function () {
+            Route::get('/', 'EmployeeController@index');
+            Route::get('/create', 'EmployeeController@create');
+            Route::post('/', 'EmployeeController@store');
+            Route::get('/{employee}', 'EmployeeController@show');
+            // Route::get('/{supplier}/edit', 'SupplierController@edit');
+            Route::put('/{employee}', 'EmployeeController@update');
+            // Route::get('/{supplier}/destroy', 'SupplierController@destroy');
+        });
     // });
 
 
-    // Route::middleware('check_privilege:admin')->group(function () {
+    // ============== admin routes ===========================================
+ // Route::middleware('check_privilege:manage_supplier')->group(function () {
+      
 
-    //     Route::prefix('login-log')->group(function () {
-    //         Route::get('/', 'LoginLogController@index');
-    //     });
-
-       
-
+        Route::prefix('product')->group(function () {
+            Route::get('/', 'ProductController@index');
+            // Route::get('/create', 'EmployeeController@create');
+            // Route::post('/', 'EmployeeController@store');
+            // Route::get('/{employee}', 'EmployeeController@show');
+            // Route::get('/{supplier}/edit', 'SupplierController@edit');
+            // Route::put('/{employee}', 'EmployeeController@update');
+            // Route::get('/{supplier}/destroy', 'SupplierController@destroy');
+        });
     // });
     
        });

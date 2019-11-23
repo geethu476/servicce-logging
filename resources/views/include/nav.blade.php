@@ -336,13 +336,27 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0);"
-                            onclick="spaRouteLoad('form', '{{url('/supplier')}}')"
+                        <a href="{{url('/employee')}}"
                             class="spa-nav-link">
                            Employees
                         </a>
                     </li>
                 </ul>
+            </li>
+             <li><hr class="light-grey-hr mb-10"></li>
+            <li class="navigation-header">
+                <span>Stock </span> 
+                <i class="zmdi zmdi-more"></i>
+            </li>
+            <li>
+                 <a href="{{url('/product')}}">
+
+                    <div class="pull-left">
+                        <i class="zmdi zmdi-account mr-20"></i>
+                        <span class="right-nav-text">@lang('nav.product')</span>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
             </li>
        
        {{--  @can('privilege_group', 'crm')
